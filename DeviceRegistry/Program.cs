@@ -77,6 +77,30 @@ namespace DeviceRegistry
     {
         static void Main(string[] args)
         {
+            Computer computer = new Computer("2023-01-15", 1200.50, 24, "Dell", "Intel Core i7");
+
+            // Output device information
+            Console.WriteLine("Computer:");
+            Console.WriteLine($"Brand: {computer.Brand}");
+            Console.WriteLine($"Processor: {computer.Processor}");
+            Console.WriteLine($"Purchase Date: {computer.PurchaseDate}");
+            Console.WriteLine($"Purchase Price: {computer.PurchasePrice}");
+            Console.WriteLine($"Warranty Months: {computer.WarrantyMonths}");
+            Console.WriteLine($"Remaining Warranty Months: {computer.RemainingWarrantyMonths()}");
+            Console.WriteLine("___________________________________");
+
+
+            Phone phone = new Phone("2023-05-20", 899.99, 12, "Apple", "iOS");
+            // Output device information            
+            Console.WriteLine("Phone:");
+            Console.WriteLine($"Brand: {phone.Brand}");
+            Console.WriteLine($"OS: {phone.OS}");
+            Console.WriteLine($"Purchase Date: {phone.PurchaseDate}");
+            Console.WriteLine($"Purchase Price: {phone.PurchasePrice}");
+            Console.WriteLine($"Warranty Months: {phone.WarrantyMonths}");
+            Console.WriteLine($"Remaining Warranty Months: {phone.RemainingWarrantyMonths()}");
+
+            Console.ReadLine();
 
         }
     }
